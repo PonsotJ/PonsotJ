@@ -1,19 +1,11 @@
 pipeline {
-  agent {
-    node {
-      label 'Messages_test'
-    }
-
-  }
+  agent any
   stages {
     stage('Message') {
       steps {
-        echo 'Hello World'
+        echo 'Hello W'
       }
     }
 
-  }
-  environment {
-    message = 'Hello world'
   }
 }
